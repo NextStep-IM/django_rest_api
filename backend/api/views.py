@@ -2,7 +2,7 @@ from django.http import JsonResponse
 from django.shortcuts import render
 
 
-def home(request):
+def home(request, *args, **kwargs):
     return render(request, 'home.html')
 
 def ping(request, num:int=None):
